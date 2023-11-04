@@ -2,7 +2,7 @@
 
 ![Vitrine-APC Logo](https://cdn.greatpages.com.br/www.digitalgrowth.marketing/1695555880/imagens/desktop/5031532.png)
 
-**Vitrine-APC** é um aplicativo web desenvolvido exclusivamente para uso interno da empresa [Nome da Sua Empresa]. Este aplicativo permite que as lojas locais associadas à empresa divulguem suas informações e produtos online, facilitando a comunicação e interação entre as lojas e os clientes da empresa.
+**Vitrine-APC** é um aplicativo web desenvolvido exclusivamente para uso interno da empresa Digital Growth. Este aplicativo permite que as lojas locais associadas à empresa divulguem suas informações e produtos online, facilitando a comunicação e interação entre as lojas e os clientes da empresa.
 
 ## Recursos
 
