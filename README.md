@@ -34,10 +34,10 @@ Contribuições para este projeto são restritas a membros autorizados da empres
 
 ## Licença
 
-Este projeto é de propriedade exclusiva da empresa [Nome da Sua Empresa] e não está disponível publicamente.
+Este projeto é de propriedade exclusiva da empresa Digital Growth e não está disponível publicamente.
 
 ---
 
-**Vitrine-APC** &copy; [Nome da Sua Empresa]
+**Vitrine-APC** &copy; Digital Growth
 
 Visite [Vitrine-APC](link_para_seu_app) para mais informações.
