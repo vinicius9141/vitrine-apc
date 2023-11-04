@@ -30,7 +30,7 @@
 
 ## Contribuição
 
-Contribuições para este projeto são restritas a membros autorizados da empresa [Nome da Sua Empresa].
+Contribuições para este projeto são restritas a membros autorizados da empresa Digital Growth.
 
 ## Licença
 
