@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="store-list-title">Todas os roles</h2>
-
+    <CarrosselComponent />
     <div class="category-filter-wrapper">
       <!-- Campo de Busca -->
       <div class="search-filter">
@@ -41,8 +41,12 @@
 
 <script>
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import CarrosselComponent from './CarrosselComponent.vue';
 
 export default {
+   components: {
+    CarrosselComponent,
+  },
   data() {
     return {
       lojas: [],
