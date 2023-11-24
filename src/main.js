@@ -9,6 +9,10 @@ import CadastrarLoja from './components/StoreForm.vue';
 import StoreList from './components/StoreList.vue';
 import MainLayout from './layouts/MainLayout.vue';
 import AppNavbar from './components/AppNavbar.vue';
+import '@fortawesome/fontawesome-free/css/all.css';
+
+
+
 
 // Importe o Vuex (VueX) para gerenciar o estado global, se você estiver usando Vuex
 import store from './store'; // Importe o seu arquivo Vuex aqui
