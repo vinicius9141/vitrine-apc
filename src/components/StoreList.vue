@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="store-list-title">Todas as Lojas</h2>
+    <h2 class="store-list-title">Todas os roles</h2>
 
     <div class="category-filter-wrapper">
       <!-- Campo de Busca -->
@@ -24,14 +24,16 @@
 
     <ul class="store-list">
       <li v-for="loja in filteredLojas" :key="loja.id" class="store-item">
-        <h3 class="store-title">{{ loja.data().Nome }}</h3>
-
-        <p class="store-detail">
-          <i class="fa-brands fa-instagram"></i>Instagram:
-          <a :href="getInstagramLink(loja.data().InstagramLink)" target="_blank">{{ loja.data().InstagramLink }}</a>
+        <a :href="getInstagramLink(loja.data().InstagramLink)" target="_blank">
+          <img :src="loja.data().Imagem" alt="Imagem da Loja" class="store-image" />
+          <h3 class="store-title">{{ loja.data().Nome }}</h3>
+          <p class="store-detail">Categoria: {{ loja.data().Categoria }}</p>
+          <p class="store-detail">
+          
+          <span class="insta-title"><i class="fa-brands fa-instagram"></i> {{ loja.data().InstagramLink }}</span>
         </p>
-        <img :src="loja.data().Imagem" alt="Imagem da Loja" class="store-image" />
-        <p class="store-detail">Categoria: {{ loja.data().Categoria }}</p>
+       </a>
+      
       </li>
     </ul>
   </div>
@@ -121,7 +123,6 @@ export default {
   .store-title {
       font-size: 20px;
       margin: 0;
-      background: #35495e;
       color: #40b883;
       border-radius: 8px;
       text-transform: capitalize;
@@ -133,13 +134,13 @@ export default {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      font-size: 17px;
+      font-size: 14px;
       align-content: center;
       gap: 5px;
       padding: 10px;
   }
   .store-detail i {
-      color: #cb0870;
+      color: #ffffff;
   }
 
   .store-image {
@@ -189,6 +190,14 @@ export default {
       border: 1px solid #40b883;
       height: 30px;
       text-align: center;
+  }
+
+  span.insta-title {
+      color: #fff;
+      padding: 3px;
+      border-radius: 4px;
+      font-weight: 500;
+      background: linear-gradient(90deg, rgba(132,11,92,1) 0%, rgba(11,66,132,1) 100%);
   }
   @media screen and (max-width: 768px) {
     .category-filter-wrapper, .search-filter  {
