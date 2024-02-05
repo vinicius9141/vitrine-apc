@@ -45,7 +45,7 @@ import CarrosselComponent from './CarrosselComponent.vue';
 
 export default {
    components: {
-    CarrosselComponent,
+    // Registro de componente
   },
   data() {
     return {
