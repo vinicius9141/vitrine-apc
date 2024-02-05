@@ -41,7 +41,7 @@
 
 <script>
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
-import CarrosselComponent from './CarrosselComponent.vue';
+// import CarrosselComponent from './CarrosselComponent.vue';
 
 export default {
    components: {
