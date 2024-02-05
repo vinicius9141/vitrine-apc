@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2 class="store-list-title">Todas os roles</h2>
-    <CarrosselComponent />
+    <h2 class="store-list-title">Todos os roles</h2>
+
     <div class="category-filter-wrapper">
       <!-- Campo de Busca -->
       <div class="search-filter">
