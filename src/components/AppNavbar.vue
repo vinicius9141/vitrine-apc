@@ -1,16 +1,7 @@
-<template>
-  <nav class="navbar">
-    <router-link to="/" class="navBarItem"> <i class="fa-solid fa-house" style="margin-right: 5px;"></i> Página Inicial</router-link>
-    <router-link v-if="userIsAuthenticated" to="/cadastrar-loja" class="navBarItem"> <i class="fa-solid fa-plus" style="margin-right: 5px;"></i>Cadastrar Loja</router-link>
-    <button @click="logout" v-if="userIsAuthenticated" class="navBarItemExit"> <i class="fa-solid fa-right-from-bracket" style="margin-right: 5px;"></i>Sair</button>
-    <router-link v-else to="/admin-signin" class="navBarItem"><i class="fa-solid fa-lock" style="margin-right: 5px;"></i> Área adm</router-link>
-  </nav>
-</template>
 
 <script>
 import { ref } from 'vue';
-import { signOut } from 'firebase/auth';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { signOut, getAuth, onAuthStateChanged } from 'firebase/auth';
 import { useRouter } from 'vue-router';
 
 export default {
@@ -19,14 +10,15 @@ export default {
     const userIsAuthenticated = ref(false);
     const router = useRouter();
 
+    // Verifica o estado de autenticação do usuário
     onAuthStateChanged(auth, (user) => {
-      userIsAuthenticated.value = !!user;
+      userIsAuthenticated.value = !!user; // Atualiza a variável com base na presença de um usuário
     });
 
     const logout = async () => {
       try {
-        await signOut(auth);
-        router.push('/');
+        await signOut(auth); // Faz logout do Firebase
+        router.push('/'); // Redireciona para a página inicial após logout
       } catch (error) {
         console.error('Erro ao fazer logout:', error);
       }
@@ -44,23 +36,10 @@ export default {
 .navbar {
   background-color: #333;
   color: #fff;
-  background-color: #333;
-  color: #fff;
   height: 3rem;
   display: flex;
   align-items: center;
   gap: 2rem;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-}
-
-li {
-  margin: 10px;
 }
 
 a {
@@ -82,11 +61,12 @@ button:hover {
 }
 
 a.navBarItem {
-    font-size: 1.2rem;
-    padding: 1rem;
-    color: #FFF;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: #FFF;
 }
-a.navBarItem:hover{
-  color:#40b883;
+
+a.navBarItem:hover {
+  color: #40b883;
 }
 </style>

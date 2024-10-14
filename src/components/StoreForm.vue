@@ -10,9 +10,9 @@
         <label for="categoria">Categoria:</label>
         <select id="categoria" v-model="novaLoja.categoria" required>
           <option value="" disabled>Selecione uma categoria</option>
-          <option value="Categoria 1">Categoria 1</option>
-          <option value="Categoria 2">Categoria 2</option>
-          <option value="Categoria 3">Categoria 3</option>
+          <option value="Categoria 1">Bar</option>
+          <option value="Categoria 2">Restaurante</option>
+          <option value="Categoria 3">Hotel</option>
           <!-- Adicione mais opções de categoria, se necessário -->
         </select>
       </div>
